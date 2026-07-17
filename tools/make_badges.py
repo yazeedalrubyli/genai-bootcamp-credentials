@@ -12,8 +12,8 @@ TIERS = {
     "merit":       {"label": "MERIT", "ring": "#8A94A6", "ring2": "#B9C1CE", "ink": "#16304A",
                     "clight": "#C7CEDA", "cstar": "#C7CEDA", "stars": 2,
                     "desc": "Strong completion: a solid, deployed Generative AI project (deliverables score ≥ 50/70)."},
-    "completion":  {"label": "COMPLETION", "ring": "#16304A", "ring2": "#2A567F", "ink": "#16304A",
-                    "clight": "#9FC0E6", "cstar": "#C7A24A", "stars": 1,
+    "completion":  {"label": "COMPLETION", "ring": "#9C6B33", "ring2": "#C99A63", "ink": "#16304A",
+                    "clight": "#E4C39A", "cstar": "#CFA168", "stars": 1,
                     "desc": "Completed the bootcamp with a passing, deployed Generative AI capstone project."},
 }
 
