@@ -61,7 +61,7 @@ def bake_png(tkey, cid, jws):
 def linkedin_url(cid, tier):
     q = {"startTask": "CERTIFICATION_NAME",
          "name": f"Generative AI Summer Bootcamp — {tier}",
-         "organizationName": "Najran University — College of CCIS",
+         "organizationName": "Najran University",
          "issueYear": YEAR, "issueMonth": MONTH,
          "certUrl": f"{BASE}/v/{cid}", "certId": cid}
     return "https://www.linkedin.com/profile/add?" + urllib.parse.urlencode(q)
