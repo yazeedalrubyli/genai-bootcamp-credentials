@@ -68,7 +68,6 @@ def linkedin_url(cid, tier):
 
 def verify_page(cid, name, tier, evidence, jws, li_url, arabic=None):
     tkey = TIER_KEY[tier]
-    ar_line = f'<div style="font-size:13.5px;color:#8792a1;margin-top:2px" dir="rtl">{H.escape(arabic)}</div>' if arabic else ""
     tier_line = f"Generative AI Summer Bootcamp <b>— {tier}</b>"
     ev = (f'<a href="{H.escape(evidence)}" target="_blank" rel="noopener">View the recipient\'s deployed project ↗</a>'
           if evidence else "—")
@@ -108,7 +107,7 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
   <div class="body">
     <img class="badge" src="../badges/{tkey}.png" alt="{tier} badge">
     <h1>{tier_line}</h1>
-    <p class="who">Awarded to <b>{H.escape(name)}</b></p>{ar_line}
+    <p class="who">Awarded to <b>{H.escape(name)}</b></p>
     <div id="vbox" class="verify">⏳ Verifying the issuer's digital signature…</div>
     <div class="meta">
       <div class="row"><span>Program</span><b>Generative AI Summer Bootcamp (40 hours)</b></div>
