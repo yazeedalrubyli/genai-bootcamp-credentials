@@ -63,7 +63,7 @@ def linkedin_url(cid, tier):
          "name": f"Generative AI Summer Bootcamp — {tier}",
          "organizationName": "Najran University — College of CCIS",
          "issueYear": YEAR, "issueMonth": MONTH,
-         "certUrl": f"{BASE}/v/{cid}/", "certId": cid}
+         "certUrl": f"{BASE}/v/{cid}", "certId": cid}
     return "https://www.linkedin.com/profile/add?" + urllib.parse.urlencode(q)
 
 def verify_page(cid, name, tier, evidence, jws, li_url):
@@ -166,7 +166,7 @@ def main():
             verify_page(cid, r["name"], r["tier"], r.get("evidence"), jws, li))
         bake_png(tkey, cid, jws)
         status_ids.append(cid)
-        vurl = f"{BASE}/v/{cid}/"
+        vurl = f"{BASE}/v/{cid}"
         dist.append(f'{r["id"]},"{r["name"]}",{r["tier"]},{vurl},{li},{r["email"]}')
     # revocation status list (empty = none revoked)
     json.dump({"@context": ["https://www.w3.org/ns/credentials/v2"],
