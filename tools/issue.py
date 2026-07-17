@@ -105,7 +105,7 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
 <div class="card">
   <div class="top">Verified Digital Credential · <b>Open Badges 3.0</b></div>
   <div class="body">
-    <img class="badge" src="../badges/{tkey}.png" alt="{tier} badge">
+    <img class="badge" src="../badges/{tkey}.png?v=aiteam" alt="{tier} badge">
     <h1>{tier_line}</h1>
     <p class="who">Awarded to <b>{H.escape(name)}</b></p>
     <div id="vbox" class="verify">⏳ Verifying the issuer's digital signature…</div>
