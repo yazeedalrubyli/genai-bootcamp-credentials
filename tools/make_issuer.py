@@ -43,7 +43,7 @@ def main():
                      "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"],
         "id": DID, "type": ["Profile"], "name": ISSUER_NAME, "url": ISSUER_URL,
         "description": ("Official issuer profile for the Generative AI Summer Bootcamp run by the "
-                        "AI Team of the College of Computer Science & Information Systems, Najran University."),
+                        "AI Team, Najran University."),
     }
     os.makedirs(os.path.join(REPO_DIR, "issuer"), exist_ok=True)
     json.dump(issuer, open(os.path.join(REPO_DIR, "issuer", "profile.json"), "w"),

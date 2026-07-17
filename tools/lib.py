@@ -12,7 +12,7 @@ BASE     = f"https://{USERNAME}.github.io/{REPO}"
 DID      = f"did:web:{USERNAME}.github.io:{REPO}"   # resolves to <BASE>/did.json
 KID      = DID + "#key-1"
 
-ISSUER_NAME = "Generative AI Summer Bootcamp — College of Computer Science & Information Systems, Najran University"
+ISSUER_NAME = "Generative AI Summer Bootcamp — AI Team, Najran University"
 ISSUER_URL  = "https://www.nu.edu.sa"
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

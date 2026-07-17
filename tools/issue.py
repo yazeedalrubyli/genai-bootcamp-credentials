@@ -111,7 +111,7 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
     <div id="vbox" class="verify">⏳ Verifying the issuer's digital signature…</div>
     <div class="meta">
       <div class="row"><span>Program</span><b>Generative AI Summer Bootcamp (40 hours)</b></div>
-      <div class="row"><span>Issuer</span><b>College of CCIS, Najran University</b></div>
+      <div class="row"><span>Issuer</span><b>AI Team, Najran University</b></div>
       <div class="row"><span>Issued</span><b>{NOW[:10]}</b></div>
       <div class="row"><span>Evidence</span><b>{ev}</b></div>
       <div class="row"><span>Credential ID</span><b>{cid}</b></div>
@@ -127,7 +127,7 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
     </details>
   </div>
 </div>
-<div class="foot">Issued by the AI Team, College of Computer Science &amp; Information Systems, Najran University · Year of AI 2026</div>
+<div class="foot">Issued by the AI Team, Najran University · Year of AI 2026</div>
 <script>
 const JWS="{jws}";
 function b64u(s){{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';const b=atob(s);const u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;}}
@@ -140,7 +140,7 @@ function b64u(s){{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=
     const key=await crypto.subtle.importKey('jwk',{{kty:'OKP',crv:'Ed25519',x:jwk.x}},{{name:'Ed25519'}},false,['verify']);
     const data=new TextEncoder().encode(h+'.'+p);
     const ok=await crypto.subtle.verify({{name:'Ed25519'}},key,b64u(s),data);
-    if(ok){{box.className='verify ok';box.innerHTML='✓ Signature valid — authentically issued by Najran University · College of CCIS.';}}
+    if(ok){{box.className='verify ok';box.innerHTML='✓ Signature valid — authentically issued by Najran University · AI Team.';}}
     else{{box.className='verify bad';box.innerHTML='✗ Signature INVALID — this credential may have been altered.';}}
   }}catch(e){{
     box.className='verify';box.innerHTML='ℹ️ Signature could not be auto-checked in this browser (needs Ed25519 WebCrypto support). The credential JSON and issuer key are linked above for manual verification.';

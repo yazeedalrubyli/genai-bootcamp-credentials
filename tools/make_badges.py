@@ -48,7 +48,7 @@ def svg(t):
   <text x="{cx}" y="248" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="bold" letter-spacing="6" fill="{t['clight']}">AI</text>
   <line x1="228" y1="266" x2="372" y2="266" stroke="{t['ring']}" stroke-width="1.5"/>
   <text x="{cx}" y="322" text-anchor="middle" font-family="Georgia,serif" font-size="{46 if len(t['label'])<8 else 38}" font-weight="bold" letter-spacing="2" fill="#ffffff">{t['label']}</text>
-  <text x="{cx}" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5" fill="{t['clight']}">COLLEGE OF CCIS</text>
+  <text x="{cx}" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5" fill="{t['clight']}">AI TEAM</text>
   {stars}
 </svg>'''
 
