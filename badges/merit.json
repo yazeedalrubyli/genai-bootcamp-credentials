@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"
+  ],
+  "id": "https://yazeedalrubyli.github.io/genai-bootcamp-credentials/badges/merit.json",
+  "type": [
+    "Achievement"
+  ],
+  "name": "Generative AI Summer Bootcamp — Merit",
+  "description": "Strong completion: a solid, deployed Generative AI project (deliverables score ≥ 50/70).",
+  "creator": "did:web:yazeedalrubyli.github.io:genai-bootcamp-credentials",
+  "criteria": {
+    "id": "https://yazeedalrubyli.github.io/genai-bootcamp-credentials/#criteria",
+    "narrative": "Awarded to participants who completed the 4-week Generative AI Summer Bootcamp (40 training hours) and shipped a working, publicly deployed capstone project, independently assessed against the published rubric."
+  },
+  "image": {
+    "id": "https://yazeedalrubyli.github.io/genai-bootcamp-credentials/badges/merit.png",
+    "type": "Image"
+  },
+  "tag": [
+    "Generative AI",
+    "LLM",
+    "RAG",
+    "Multimodal AI",
+    "Hugging Face"
+  ]
+}

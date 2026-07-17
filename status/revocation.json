@@ -1,0 +1,11 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "id": "https://yazeedalrubyli.github.io/genai-bootcamp-credentials/status/revocation.json",
+  "type": [
+    "1EdTechRevocationList"
+  ],
+  "issuer": "did:web:yazeedalrubyli.github.io:genai-bootcamp-credentials",
+  "revokedCredentials": []
+}

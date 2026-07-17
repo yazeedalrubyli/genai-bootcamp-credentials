@@ -1,0 +1,10 @@
+# Never commit secrets — the private signing key lives OUTSIDE this repo, but guard against copies:
+*.private.*
+*private-key*
+*.pem
+*.key
+distribution-list.csv
+badge-issuer-PRIVATE-KEY/
+__pycache__/
+*.pyc
+.DS_Store

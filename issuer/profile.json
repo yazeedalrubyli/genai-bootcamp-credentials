@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"
+  ],
+  "id": "did:web:yazeedalrubyli.github.io:genai-bootcamp-credentials",
+  "type": [
+    "Profile"
+  ],
+  "name": "Generative AI Summer Bootcamp — College of Computer Science & Information Systems, Najran University",
+  "url": "https://www.nu.edu.sa",
+  "description": "Official issuer profile for the Generative AI Summer Bootcamp run by the AI Team of the College of Computer Science & Information Systems, Najran University."
+}
