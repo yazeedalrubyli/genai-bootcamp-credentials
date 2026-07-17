@@ -127,7 +127,7 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
     </details>
   </div>
 </div>
-<div class="foot">Issued by the AI Team, Najran University · Year of AI 2026</div>
+<div class="foot">Issued by the AI Team, Najran University</div>
 <script>
 const JWS="{jws}";
 function b64u(s){{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';const b=atob(s);const u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;}}
