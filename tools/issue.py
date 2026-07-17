@@ -96,7 +96,7 @@ h1{{font-family:Georgia,serif;font-size:24px;color:var(--navy);margin:8px 0 2px}
 .verify{{margin-top:16px;padding:12px 14px;border-radius:10px;font-size:13.5px;background:#f0f4f9;color:var(--navy)}}
 .verify.ok{{background:#eaf6ee;color:#1f7a43}} .verify.bad{{background:#fbecec;color:#b3352b}}
 .btn{{display:inline-block;margin:16px 6px 4px;padding:11px 18px;border-radius:9px;font-weight:600;font-size:14px;text-decoration:none}}
-.li{{background:#0a66c2;color:#fff}} .ghost{{background:#fff;color:var(--navy);border:1px solid var(--line)}}
+.li{{background:#0a66c2;color:#fff;padding:12px 30px;font-size:15px}}
 details{{margin-top:12px;text-align:left;font-size:12.5px;color:var(--muted)}}
 summary{{cursor:pointer;color:var(--navy);font-weight:600}}
 code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-radius:6px;margin-top:6px;font-size:11px}}
@@ -116,13 +116,13 @@ code{{word-break:break-all;background:#f4f6f8;display:block;padding:8px;border-r
       <div class="row"><span>Evidence</span><b>{ev}</b></div>
       <div class="row"><span>Credential ID</span><b>{cid}</b></div>
     </div>
-    <a class="btn li" href="{H.escape(li_url)}" target="_blank" rel="noopener">Add to LinkedIn</a>
-    <a class="btn ghost" href="../credentials/{cid}.json" target="_blank" rel="noopener">Credential JSON</a>
+    <div style="text-align:center"><a class="btn li" href="{H.escape(li_url)}" target="_blank" rel="noopener">Add to LinkedIn</a></div>
     <details><summary>How to verify this yourself</summary>
       This credential is a W3C Verifiable Credential (Open Badges 3.0) signed with the issuer's
-      Ed25519 key. Verification below is computed live in your browser: it fetches the issuer's public
+      Ed25519 key. Verification above is computed live in your browser: it fetches the issuer's public
       key from <a href="../did.json" target="_blank">did.json</a> and checks the signature (EdDSA) over
       the credential. Nothing here depends on a third-party platform.
+      The raw signed credential is available as <a href="../credentials/{cid}.json" target="_blank">JSON</a>.
       <code id="jws">{jws}</code>
     </details>
   </div>
